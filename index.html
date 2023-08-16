@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+
+  <title>Devchallenges</title>
+  <link rel="stylesheet" href="SRC/css/style.css">
+
+</head>
+
+<body>
+  <div class="body">
+    <div class="carrinho">
+      <div class="item">
+        <div class="img_carrinho"><img src="assetis/photo1.png" alt=""></div>
+        <div class="descricao">
+          <h3>Vintage Backbag</h3>
+          <span><strong>$54.99</strong><del>$94.99</del></span>
+          <div class="contador">
+            <button onclick="incremento()">+</button>
+            <span id="value">0</span>
+            <button onclick="decremento()">-</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="img_carrinho"><img src="assetis/photo2.png" alt=""></div>
+        <div class="descricao">
+          <h3>Levi Shoes</h3>
+          <span><strong>$54.99</strong><del>$94.99</del></span>
+          <div class="contador">
+            <button onclick="incremento()">+</button>
+            <span id="value">0</span>
+            <button onclick="decremento()">-</button>
+          </div>
+
+          
+        </div>
+      </div>
+      
+
+      <div class="shopping">
+        <h3>Shopping</h3>
+        <span class="inposto">
+          $19
+        </span>
+      </div>
+
+      <div class="total">
+        <h3>Total</h3>
+        <span id="res">$148.98</span>
+      </div>
+    </div>
+    <div class="formulario">
+      <h1>Checout</h1>
+      <h3>Contact infomation</h3>
+      <form >
+        <div class="inputs_validation">
+          <label for="email">E-mail</label>
+          <input type="email" id="email"  placeholder="Enter your email...">
+           <div class="img">
+            <img src="assetis/email.svg" alt="img">
+          </div>
+        </div>
+        <div class="inputs_validation">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" placeholder="Enter your phone...">
+           <div class="img">
+            <img src="assetis/phone.svg" alt="">
+          </div>
+        </div>
+
+        <h3>Shipping address</h3>
+    
+        <div class="inputs_validation">
+          <label for="name">Full name</label>
+          <input type="text" id="nomeCompleto" placeholder="Rodney Cotton">
+          <div class="img">
+            <img src="assetis/adress.svg" alt="">
+          </div>
+        </div>
+    
+        <div class="inputs_validation">
+          <label for="city">City</label>
+          <input type="text" id="city"  placeholder="Your city..">
+          <div class="img">
+            <img src="assetis/adress.svg" alt="">
+          </div>
+        </div>
+        <div class="flex">
+          <div class="inputs_validation">
+            <label for="country">Country</label>
+            <input type="" id="country" placeholder="Your country..">
+            <div class="img">
+              <img src="assetis/email.svg" alt="">
+            </div>
+          </div>
+          <div class="inputs_validation">
+            <label for="postal-code">Postal code</label>
+            <input type="text" id="postal-code" placeholder="Enter your email...">
+            <div class="img">
+              <img src="assetis/email.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          Save this information for next time
+        </div>
+        <button class="button" type="submit">Continue</button>
+      </form>
+    </div>
+   
+  </div>
+  <script src="SRC/js/script.js"></script>
+</body>
+
+</html>
